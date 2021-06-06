@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4C0B4"
+    android:foregroundTint="#9C673AB7"
+    tools:context=".About">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="358dp"
+        android:layout_height="69dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="О нас"
+        android:textSize="36sp"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="368dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="456dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Сделали студенты 3.1ПМИ(б) Морозов Сергей и Киреенко Максим"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnBackAbout"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="136dp"
+        android:layout_height="77dp"
+        android:onClick="btnBackAboutClick"
+        android:text="Назад"
+        android:textColor="#0C0202"
+        android:textColorHighlight="#050000"
+        android:textColorHint="#0C0C0C"
+        android:textColorLink="#090000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        tools:text="Назад" />
+</androidx.constraintlayout.widget.ConstraintLayout>

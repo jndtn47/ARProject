@@ -1,5 +1,5 @@
 <!--
-   Copyright 2017 Google LLC
+   Copyright 2016 Google LLC
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -14,25 +14,41 @@
    limitations under the License.
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.google.ar.core.examples.c.helloar.HelloArActivity">
+    tools:context="com.google.ar.core.examples.java.helloar.HelloArActivity">
 
   <android.opengl.GLSurfaceView
       android:id="@+id/surfaceview"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
       android:layout_gravity="top"/>
 
   <ImageButton
-    android:id="@+id/settings_button"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentEnd="true"
-    android:layout_alignParentTop="true"
-    android:layout_margin="25dp"
-    android:src="@drawable/ic_settings"
-    android:background="@android:color/transparent"/>
+      android:id="@+id/settings_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentTop="true"
+      android:layout_margin="25dp"
+      android:src="@drawable/ic_settings"
+      android:background="@android:color/transparent"/>
+
+  <ImageButton
+      android:id="@+id/imgBtnBack"
+      android:layout_width="83dp"
+      android:layout_height="56dp"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="18dp"
+      android:layout_marginEnd="310dp"
+      android:layout_marginBottom="14dp"
+      android:background="@android:color/transparent"
+      android:onClick="imgBtnBackClick"
+      android:scaleType="fitCenter"
+      app:srcCompat="@android:drawable/ic_menu_revert" />
 
 </RelativeLayout>
